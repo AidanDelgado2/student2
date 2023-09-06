@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Snake
 description: Drag and drop practice
-type: plans
+type: hacks
 courses: { compsci: {week: 1} }
 ---
 

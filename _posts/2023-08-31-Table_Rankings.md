@@ -2,79 +2,67 @@
 toc: true
 comments: false
 layout: post
-title: Sample of Detail Plan
-description: Example Plan!!! Analyze hacks and plan.
-type: plans
+title: Table Ranking Restaurants
+description: My Opinions of Restaurants in San Diego
+type: hacks
 courses: { compsci: {week: 1} }
 ---
 
-%%html
+
 <table class="table">
     <thead>
         <tr>
-            <th>Make</th>
-            <th>Model</th>
-            <th>Year</th>
-            <th>Color</th>
+            <th>Place</th>
+            <th>Enjoyability</th>
+            <th>Accessibility</th>
+            <th>Food Origin</th>
             <th>Price</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Cadillac</td>
-            <td>Broughan</td>
-            <td>1969</td>
-            <td>Black</td>
-            <td>$10,000</td>
+            <td>Din Tai Fung</td>
+            <td>10/10</td>
+            <td>30 Minute Drive</td>
+            <td>Chinese</td>
+            <td>Expensive</td>
         </tr>
         <tr>
-            <td>Ford</td>
-            <td>F-350</td>
-            <td>1997</td>
-            <td>Green</td>
-            <td>$15,000</td>
+            <td>Applebees</td>
+            <td>3/10</td>
+            <td>10 Minute Drive</td>
+            <td>American</td>
+            <td>Cheap</td>
         </tr>
         <tr>
-            <td>Ford</td>
-            <td>Excursion</td>
-            <td>2003</td>
-            <td>Green</td>
-            <td>$25,000</td>
+            <td>Pho Cow Cali</td>
+            <td>10/10</td>
+            <td>15 minute drive</td>
+            <td>Vietnamese</td>
+            <td>Moderate</td>
         </tr>
         <tr>
-            <td>Ford</td>
-            <td>Ranger</td>
-            <td>2012</td>
-            <td>Red</td>
-            <td>$8,000</td>
+            <td>Canes</td>
+            <td>10/10</td>
+            <td>15 minute drive</td>
+            <td>American</td>
+            <td>Cheap</td>
         </tr>
         <tr>
-            <td>Kuboto</td>
-            <td>L3301 Tractor</td>
-            <td>2015</td>
-            <td>Orange</td>
-            <td>$12,000</td>
+            <td>Dave's Hot Chicken</td>
+            <td>10/10</td>
+            <td>10 minute drive</td>
+            <td>American</td>
+            <td>Cheap</td>
         </tr>
         <tr>
-            <td>Ford</td>
-            <td>Fusion Energi</td>
-            <td>2015</td>
-            <td>Guard</td>
-            <td>$25,000</td>
+            <td>Cheesecake Factory</td>
+            <td>7/10</td>
+            <td>10 minute drive</td>
+            <td>American</td>
+            <td>Expensive</td>
         </tr>
         <tr>
-            <td>Acura</td>
-            <td>XL</td>
-            <td>2006</td>
-            <td>Grey</td>
-            <td>$10,000</td>
-        </tr>
-        <tr>
-            <td>Ford</td>
-            <td>F150 Lightning</td>
-            <td>2024</td>
-            <td>Guard</td>
-            <td>$70,000</td>
         </tr>
     </tbody>
 </table>
