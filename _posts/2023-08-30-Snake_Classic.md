@@ -98,7 +98,7 @@ courses: { compsci: {week: 1} }
             <a id="new_game2" class="link-alert">new game</a>
             <br>
             <p>Speed:
-                <input id="speed1" type="radio" name="speed" value="120" checked/>
+                <input id="speed1" type="radio" name="speed" value="240" checked/>
                 <label for="speed1">Slow</label>
                 <input id="speed2" type="radio" name="speed" value="75"/>
                 <label for="speed2">Normal</label>
