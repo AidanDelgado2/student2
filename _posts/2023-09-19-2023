@@ -1,0 +1,15 @@
+---
+toc: true
+comments: true
+layout: post
+title: Week 5 Plan
+description: This Week's Plan
+type: plans
+courses: { compsci: {week: 5} }
+---
+
+## List
+Tu - Team Teaching Talk
+W - End of Tri Project Talk, Tech Talk on Python Flask (Backend)
+Th - Team Test Reviews, Python Flask Anatomy and Project
+F - Team Test Reviews, 2.1 Binary, Music API, and Project (Frontend)
