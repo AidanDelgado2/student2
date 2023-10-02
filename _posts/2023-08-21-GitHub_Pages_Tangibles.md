@@ -5,7 +5,7 @@ layout: post
 title: Review Ticket 1
 description: This Week's Results
 type: tangibles
-courses: { compsci: {week: 0} }
+courses: { csp: {week: 0} }
 ---
 
 ### Summary of Accomplishments

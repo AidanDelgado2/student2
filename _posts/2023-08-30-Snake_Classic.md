@@ -5,7 +5,7 @@ layout: post
 title: Snake
 description: Drag and drop practice
 type: hacks
-courses: { compsci: {week: 1} }
+courses: { csp: {week: 1} }
 ---
 
 <style>

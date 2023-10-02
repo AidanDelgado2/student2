@@ -5,7 +5,7 @@ layout: post
 title: Table Ranking Restaurants
 description: My Opinions of Restaurants in San Diego
 type: hacks
-courses: { compsci: {week: 2} }
+courses: { csp: {week: 2} }
 ---
 
 

@@ -5,7 +5,7 @@ layout: post
 title: JS Calculator
 description: Grab of the Calculator from APCSA repository
 type: tangibles
-courses: { compsci: {week: 2} }
+courses: { csp: {week: 2} }
 ---
 
 <style>

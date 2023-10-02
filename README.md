@@ -85,7 +85,7 @@ bundle install
     title: Daily Plan Sample
     description: Example Blog!!!  This shows planning and notes from hacks.
     type: plans
-    courses: { compsci: {week: 0} }
+    courses: { csp: {week: 0} }
     ---
     ```
 
@@ -95,12 +95,12 @@ bundle install
 
 - The type value will tells us which column this is going to appear under, supported values: `plans`, `hacks`, `tangibles`.
 
-- The courses tells us which menu item it will be under, in this case the `compsci` menu, and the `week` tells it what row (week) it will appear under that menu.
+- The courses tells us which menu item it will be under, in this case the `csp` menu, and the `week` tells it what row (week) it will appear under that menu.
 
 - In our examples,  hacks(ToDo) contains references to our IPYNB files; these are stored in GitHub under the `_notebooks` folder.   The plans and tangibles contains references to our MD files; these are stored in GitHub under the `_posts` folder.
 
 - Key files in Computer Science Lab Notebook
-    - `compsci.md` - this is the "Computer Science Lab Notebook" page and is the link `https://nighthawkcoders.github.io/student/compsci`.  It contains the Title and Number of units on the page.
-    - `_data/compsci.yml` - this contains the supporting data that helps organize the units on the page.
+    - `csp.md` - this is the "Computer Science Lab Notebook" page and is the link `https://nighthawkcoders.github.io/student/csp`.  It contains the Title and Number of units on the page.
+    - `_data/csp.yml` - this contains the supporting data that helps organize the units on the page.
     - `_layouts`\schedule.html - this contains code, in the Liquid language, that generates the HTML for all the rows and columns.
     - fyi, the schedule.html could work for another type of page.  For instance, you could make a csa.md, _data/csa.yml, and tag files with `csa: {week: 0}` under courses.
