@@ -1,11 +1,16 @@
 # CSP course meta data
 Unit1:
   title: Build a Lab Notebook
-  description:  Install Tools.  Design lab notebook.  Learn GitHub Pages. Work with Pair (pair name). 
+  description: The initial weeks focus on introducing Tools, Pair Programming, and the AP Resources that we plan to use throughout the year. At the end of Weeks 0-3, students will be exposed to blogging with GitHub Pages; developing with Jupyter Notebooks, Python, JavaScript, HTML, and Code.org AppLab; working with AP classroom and becoming familiar with Create Performance Task project requirements.
   start: 0
   end: 3
 Unit2:
   title: Learn Language
-  description: Learn (JavaScript|Python|Java).  Start Agile development process.
+  description: Websites are made up of several key parts. Frontend, Backend, Data and Deployment. The focus for these weeks is to enable students to perform the aspects of constructing and deploying a simple Website. There will be several lectures during this period to provide you with concepts on how to build a WebSite, including working with data from a backend server.
   start: 4
   end: 7
+Unit3:
+  title: Web Application, Data, and N@tM
+  description: Student at teams need to build their own Website and Blog their understanding. The Website should include their own interests, but requires use of Python Flask and JavaScript programming. By the end of the Unit, students will be ready to start many of the technical coding aspects of Web Development, having established a Deployed Website. In November, the Trimester work will end with a project and student participation in Electives Department "Night at the Museum" (N@tM).
+  start: 8
+  end: 12
