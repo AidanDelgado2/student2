@@ -4,8 +4,8 @@ comments: false
 layout: post
 title: JS Calculator
 description: Grab of the Calculator from APCSA repository
-type: tangibles
-courses: { csp: {week: 2} }
+type: hacks
+courses: { csp: {week: 3} }
 ---
 
 <style>
