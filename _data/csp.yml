@@ -16,11 +16,16 @@ Unit3:
   end: 12
 Unit4:
   title: Algorithmic Programming
-  description: adkj
+  description: Trimester 2 begins with student teaching and a focus on algorithms. Each week a "Student Team" has a teaching assignment supported by College Board materials. Additionally, the Teacher is providing Career Tech mini-labs that correspond to one or more topics for the week. Use the two things together as you improve your learning experience, Frontend blog and Jupyter Notebooks.
   start: 13
   end: 16
 Unit5:
   title: OOP and Databases
-  description: fsdfksj
+  description: Trimester 2 continues with student learning OOP and immediately applying it to Databases. Each week a "Student Teams" will be working on frontend and backend elements for their Create Performance Task (CPT). GitHub pages will be focus of instruction for frontend, OOP in Python will be instruction provided to create a database which will help exceed every CPT requirement.
   start: 17
   end: 20
+Unit6:
+  title: Create Performance Task (CPT) and N@tM
+  description: Trimester 2 concludes with student presenting their CPT project at N@tM. Each person within "Student Teams" will have their own specialty within the student project that satisfied all their Create Performance Task requirements. Student should be able to talk about design, coding, and present features of their portion of the system.
+  start: 21
+  end: 24
