@@ -64,7 +64,7 @@ courses: {'csp': {'week': 20}}
             if (response.ok) {
                 console.log("Successfully Signed Up");
                 alert("Account has been created. You will be directed to login page shortly.");
-                window.location.href = "https://aidandelgado2.github.io/student2//2023/01/31/loginpage.html"
+                window.location.href = "https://aidandelgado2.github.io/student2//2024/01/31/loginpage.html"
               } else {
                 console.error("Sign Up Failed");
                 // You can handle failed login attempts here
