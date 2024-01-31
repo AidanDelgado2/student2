@@ -2,10 +2,9 @@
 toc: true
 comments: true
 layout: post
-title: Signup Page demographics
-description: Team teach about SASS Javascript login and signup page
-courses: { csp: {week: 20} }
+title: Signup Page Demographics
 type: hacks
+courses: {'csp': {'week': 20}}
 ---
 
 
