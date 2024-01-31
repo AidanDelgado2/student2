@@ -59,7 +59,7 @@ courses: {'csp': {'week': 20}}
           redirect: 'follow'
         };
 
-      fetch("http://localhost:8045/api/users/", requestOptions)
+      fetch("http://127.0.0.1:8045/api/users/", requestOptions)
           .then(response => {
             if (response.ok) {
                 console.log("Successfully Signed Up");
