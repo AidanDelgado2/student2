@@ -59,12 +59,12 @@ courses: {'csp': {'week': 20}}
           redirect: 'follow'
         };
 
-      fetch("http://localhost:8090/api/users/", requestOptions)
+      fetch("http://localhost:8045/api/users/", requestOptions)
           .then(response => {
             if (response.ok) {
                 console.log("Successfully Signed Up");
                 alert("Account has been created. You will be directed to login page shortly.");
-                window.location.href = "https://drishyamody.github.io/student2//2023/01/22/SASS_Javascript_Login.html"
+                window.location.href = "https://aidandelgado2.github.io/student2//2023/01/31/loginpage.html"
               } else {
                 console.error("Sign Up Failed");
                 // You can handle failed login attempts here
