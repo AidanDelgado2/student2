@@ -92,6 +92,7 @@ courses: {'csp': {'week': 20}}
 </head>
 
 <body>
+  <p align="center">
     <div class="container">
     <form action="javascript:signUp_user()">
     <p><label for="Name">First Name:</label>
@@ -108,6 +109,7 @@ courses: {'csp': {'week': 20}}
     </p>
     <button class="button-spacing">Submit</button>
     </form>
+  
   </div>
    
 
