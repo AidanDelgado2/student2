@@ -19,8 +19,8 @@ For my contribution to the project, I added an update and delete user function. 
 ## Component A: Code from Program
 
 ## My code:
-<img src="https://AidanDelgado2.github.io/student2/images/My code segment 1.png" height="300" width="200">
-<img src="https://AidanDelgado2.github.io/student2/images/My code segment 2.png" height="300" width="200">
+<img src="https://AidanDelgado2.github.io/student2/images/My code segment 1.png" height="300" width="350">
+<img src="https://AidanDelgado2.github.io/student2/images/My code segment 2.png" height="300" width="350">
 
 <body>
 
