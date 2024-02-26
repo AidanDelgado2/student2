@@ -18,6 +18,10 @@ For my contribution to the project, I added an update and delete user function. 
 
 ## Component A: Code from Program
 
+## My code:
+<img src="https://AidanDelgado2.github.io/student2/images/My code segment 1.png" height="300" width="200">
+<img src="https://AidanDelgado2.github.io/student2/images/My code segment 2.png" height="300" width="200">
+
 <body>
 
 <table border="3">
@@ -59,3 +63,5 @@ For my contribution to the project, I added an update and delete user function. 
 
 </body>
 
+## Final Reflection
+This trimester certainly had ups and downs, and I was quite frankly happy that I was able to work with such a good team. I learned how to code javascript, since I was a frontend developer, which was not my strong suit at the beginning of the trimester. Overall, I had a great experience and learned many new skills I can apply next trimester.
