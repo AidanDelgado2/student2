@@ -27,28 +27,36 @@ For my contribution to the project, I added an update and delete user function. 
     </tr>
     <tr>
         <td>Instructions for input from one of the following: the user, a device, an online datas stream, a file.</td>
-        <td>My code receives input from the user when the user edits their profile (PUT method). <img src="https://AidanDelgado2.github.io/student2/images/Collegeboard_Requirement1.png" height="150" width="250"></td>
+        <td>My code receives input from the user when the user edits their profile (PUT method). 
+        <img src="https://AidanDelgado2.github.io/student2/images/Collegeboard_Requirement1.png" height="200" width="350"></td>
     </tr>
     <tr>
         <td>Use of at least one list (or other collection type) to represent a collectino of data that is stored and used to manage program complexity and help fulfill the users purpose.</td>
-        <td>The database stores user information such as date of birth, as well as questions. <img src="https://AidanDelgado2.github.io/student2/images/Collegeboard_Requirement2.png" height="150" width="250"></td>
+        <td>The database stores user information such as date of birth, as well as questions. 
+        <img src="https://AidanDelgado2.github.io/student2/images/Collegeboard_Requirement2.png" height="200" width="350"></td>
     </tr>
     <tr>
         <td>At least one procedure that contriubted to the program’s intened purpose where you have defined: the name, return type, one or more parameters:</td>
-        <td>This code has a name (post) and return type. <img src="https://AidanDelgado2.github.io/student2/images/Collegeboard_Requirement3.png" height="150" width="250"></td>
+        <td>This code has a name (post) and return type. 
+        <img src="https://AidanDelgado2.github.io/student2/images/Collegeboard_Requirement7.png" height="200" width="330"></td>
     </tr>
     <tr>
         <td>An algorithm that includes sequencing, selection, and iteration that is in the body of the selected procedure</td>
-        <td>This code stores the user information and recalls it for later on. <img src="https://AidanDelgado2.github.io/student2/images/Collegeboard_Requirement4.png" height="150" width="250"></td>
+        <td>This code stores the user information and recalls it for later on. 
+        <img src="https://AidanDelgado2.github.io/student2/images/Collegeboard_Requirement4.png" height="200" width="450"></td>
     </tr>
     <tr>
         <td>Calls to your student-developed prodcedure</td>
-        <td>This code uses a FETCH function to send a DELETE message to the api. <img src="https://AidanDelgado2.github.io/student2/images/Collegeboard_Requirement5.png" height="150" width="250"></td>
+        <td>This code uses a FETCH function to send a DELETE message to the api. 
+        <img src="https://AidanDelgado2.github.io/student2/images/Collegeboard_Requirement5.png" height="150" width="375"></td>
     </tr>
     <tr>
         <td>Instructions for output (tactile, audible, visual) based on input and program functionality</td>
-        <td>This code demonstrates a fetch that shows a user that they have deleted themselves from the database. <img src="https://AidanDelgado2.github.io/student2/images/Collegeboard_Requirement6.png" height="150" width="250"></td>
+        <td>This code demonstrates a fetch that shows a user that they have deleted themselves from the database. 
+        <img src="https://AidanDelgado2.github.io/student2/images/Collegeboard_Requirement6.png" height="175" width="330"></td>
     </tr>
 </table>
 
 </body>
+
+## Component B: Video
