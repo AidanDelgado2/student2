@@ -22,6 +22,7 @@ For my contribution to the project, I added an update and delete user function. 
 <img src="https://AidanDelgado2.github.io/student2/images/My code segment 1.png" height="300" width="350">
 <img src="https://AidanDelgado2.github.io/student2/images/My code segment 2.png" height="300" width="350">
 
+## Table with code that satisfies collegeboard requirements:
 <body>
 
 <table border="3">
