@@ -14,7 +14,6 @@ My team's idea was to create a website that could help students get the resource
 ## My contribution:
 For my contribution to the project, I added an update and delete user function. This way, users could either update their profile information including their username or date of birth. With my function, users could also delete themselves from the database as well.
 
-[Collegeboard Requirements](https://apcentral.collegeboard.org/media/pdf/ap-csp-student-task-directions.pdf)
 
 ## Component A: Code from Program
 
@@ -23,6 +22,7 @@ For my contribution to the project, I added an update and delete user function. 
 <img src="https://AidanDelgado2.github.io/student2/images/My code segment 2.png" height="300" width="350">
 
 ## Table with code that satisfies collegeboard requirements:
+[Collegeboard Requirements](https://apcentral.collegeboard.org/media/pdf/ap-csp-student-task-directions.pdf)
 <body>
 
 <table border="3">
