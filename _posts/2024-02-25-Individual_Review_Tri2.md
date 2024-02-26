@@ -59,4 +59,3 @@ For my contribution to the project, I added an update and delete user function. 
 
 </body>
 
-## Component B: Video
