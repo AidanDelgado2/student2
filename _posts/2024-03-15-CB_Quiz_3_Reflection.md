@@ -22,3 +22,6 @@ type: hacks
 - review previous test results: by examining my questions that I have frequently missed, I can practice these topics to get better at them and the topics they are related to
 - study the AP CSP barrons book: starting a month before the exam, I will go over the topics that I have the least knowledge on and then focus on those topics in my studying book by highlighting key terms and going over mini practice quizzes
 - binary practice: I feel that my binary computation process is too slow, so I will practice binary worksheets to get better at recognizing common patterns of binary
+
+## Reflection
+Overall, even though I was unable to finish the MCQ before the period ended since it was a short period, I was quite happy about my score. A 29/32 is a promising score for my future AP exam, and it is a large improvement since the first MC that I took in this class. My progression has been steady and I have improved since every practice test we have completed. Granted, there are a few topics that I have to review, but there is not much which is good because that means I can focus on the topics that I don't get at a deeper level.
