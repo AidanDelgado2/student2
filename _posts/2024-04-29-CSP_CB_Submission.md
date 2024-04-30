@@ -2,118 +2,109 @@
 toc: true
 comments: true
 layout: post
-title: Matching Game
+title: Animal Guessing Game
 type: hacks
 courses: {'csp': {'week': 20}}
 ---
 
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Matching Game</title>
+<title>Animal Guessing Game</title>
 <style>
-  .card {
-    width: 100px;
-    height: 100px;
-    background-color: #aaa;
-    margin: 5px;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-    line-height: 100px;
-    font-size: 24px;
-  }
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-image: url('');
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Ensures full coverage of the viewport height */
+        margin: 0; /* Removes default margin */
+        padding: 0; /* Removes default padding */
+    }
+    #game-container {
+        padding: 20px; /* Add some padding to the game container */
+    }
+    .result {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .result.correct {
+        color: green;
+    }
+    .result.incorrect {
+        color: red;
+    }
 </style>
 </head>
 <body>
-<h1>Matching Game</h1>
-<div id="gameBoard"></div>
+
+<div id="game-container">
+
+    <p>Guess the animal! Here are three facts... good luck!:</p>
+
+    <div id="animal-facts">
+        <span id="fact1"></span><br>
+        <span id="fact2"></span><br>
+        <span id="fact3"></span><br>
+    </div>
+
+    <p class="result" id="result"></p>
+
+    <input type="text" id="guess-input" placeholder="Enter your guess">
+    <button onclick="checkGuess()">Guess</button>
+    <button onclick="resetGame()">Play Again</button>
+</div>
+
 <script>
-  // Function to shuffle an array
-  function shuffle(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-  }
+    // Animal facts
+    const animals = [
+        { name: "giraffe", facts: ["Tallest land animal", "Has a long neck", "Spots on body"] },
+        { name: "hippo", facts: ["Large herbivorous mammal", "Semi-aquatic", "Has large jaws"] },
+        { name: "gorilla", facts: ["Largest primate", "Native to Africa", "Highly intelligent"] },
+        { name: "lion", facts: ["King of the jungle", "Social animals", "Distinctive mane"] },
+        { name: "cheetah", facts: ["Fastest land animal", "Can accelerate from 0 to 60 mph in just a few seconds", "Distinctive black tear stripes"] },
+        { name: "elephant", facts: ["Largest land animal", "Has tusks", "Highly intelligent and social"] }
+    ];
 
-  // Generate a random pattern for a card
-  function generatePattern() {
-    const patterns = ['⚫', '⚪', '⚬', '⚭', '⚮', '⚯']; // Add more if needed
-    return patterns[Math.floor(Math.random() * patterns.length)];
-  }
+    let selectedAnimal;
 
-  // Initialize game
-  function initializeGame() {
-    const cards = [];
-    const gameBoard = document.getElementById('gameBoard');
+    function startGame() {
+        // Select a random animal
+        const randomAnimalIndex = Math.floor(Math.random() * animals.length);
+        selectedAnimal = animals[randomAnimalIndex];
 
-    // Generate pairs of patterns
-    for (let i = 0; i < 8; i++) {
-      const pattern = generatePattern();
-      cards.push(pattern, pattern);
-    }
+        // Display facts
+        document.getElementById('fact1').textContent = selectedAnimal.facts[0];
+        document.getElementById('fact2').textContent = selectedAnimal.facts[1];
+        document.getElementById('fact3').textContent = selectedAnimal.facts[2];
 
-    // Shuffle the cards
-    shuffle(cards);
-
-    // Display cards on the board
-    cards.forEach((pattern, index) => {
-      const card = document.createElement('div');
-      card.classList.add('card');
-      card.dataset.index = index;
-      card.textContent = pattern;
-      card.addEventListener('click', handleCardClick);
-      gameBoard.appendChild(card);
-    });
-  }
-
-  // Handle card click
-  let firstCard = null;
-  let secondCard = null;
-  function handleCardClick(event) {
-    const clickedCard = event.target;
-
-    // Ignore if the card is already matched or two cards are already revealed
-    if (clickedCard.classList.contains('matched') || secondCard) return;
-
-    // Reveal the clicked card
-    clickedCard.classList.add('revealed');
-
-    if (!firstCard) {
-      // First card clicked
-      firstCard = clickedCard;
-    } else {
-      // Second card clicked
-      secondCard = clickedCard;
-
-      // Check for a match after a short delay
-      setTimeout(checkForMatch, 500);
-    }
-  }
-
-  // Check if two revealed cards match
-  function checkForMatch() {
-    if (firstCard.textContent === secondCard.textContent) {
-      // Match found
-      firstCard.classList.add('matched');
-      secondCard.classList.add('matched');
-    } else {
-      // No match, flip the cards back
-      firstCard.classList.remove('revealed');
-      secondCard.classList.remove('revealed');
+        // Clear previous result
+        document.getElementById('result').textContent = "";
     }
 
-    // Reset firstCard and secondCard
-    firstCard = null;
-    secondCard = null;
-  }
+    startGame(); // Start the game initially
 
-  // Initialize the game when the page loads
-  window.onload = initializeGame;
+    // Check the user's guess
+    function checkGuess() {
+        const guessInput = document.getElementById('guess-input').value.trim().toLowerCase();
+        if (guessInput === selectedAnimal.name) {
+            document.getElementById('result').textContent = "Congratulations you got it right!";
+            document.getElementById('result').className = "result correct";
+        } else {
+            document.getElementById('result').textContent = "Nice try";
+            document.getElementById('result').className = "result incorrect";
+        }
+    }
+
+    // Reset the game
+    function resetGame() {
+        document.getElementById('guess-input').value = ""; // Clear guess input
+        startGame(); // Start a new game
+    }
 </script>
+
 </body>
 </html>
