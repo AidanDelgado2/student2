@@ -107,16 +107,20 @@ courses: {'csp': {'week': 20}}
     
     animals.forEach(animal => {
         if (guessInput === animal.name) {
-            document.getElementById('result').textContent = "Congratulations you got it right!";
-            document.getElementById('result').className = "result correct";
-            document.getElementById(animal.imageId).style.display = 'block';
-            correctGuess = true;
+            if (selectedAnimal.name === guessInput) {
+                document.getElementById('result').textContent = "Congratulations you got it right!";
+                document.getElementById('result').className = "result correct";
+                document.getElementById(animal.imageId).style.display = 'block';
+                correctGuess = true;
+            } else {
+                document.getElementById('result').textContent = "You guessed the animal, but it's not the one we're thinking of!";
+                document.getElementById('result').className = "result incorrect";
+            }
         }
     });
 
-    
     if (!correctGuess) {
-        document.getElementById('result').textContent = "Nice try";
+        document.getElementById('result').textContent = "Nice try, but that's not the correct animal.";
         document.getElementById('result').className = "result incorrect";
     }
 }
