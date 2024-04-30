@@ -17,7 +17,6 @@ courses: {'csp': {'week': 20}}
     body {
         font-family: Arial, sans-serif;
         text-align: center;
-        background-image: url('');
         background-size: cover;
         background-position: center;
         height: 100vh; /* Ensures full coverage of the viewport height */
@@ -43,7 +42,7 @@ courses: {'csp': {'week': 20}}
 
 <div id="game-container">
 
-    <p>Guess the animal! Here are three facts... good luck!:</p>
+    <p style="background-color: white; padding: 5px;">Guess the animal! Here are three facts... good luck!:</p>
 
     <div id="animal-facts">
         <span id="fact1"></span><br>
