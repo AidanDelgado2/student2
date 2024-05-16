@@ -1,18 +1,9 @@
----
-toc: true
-comments: true
-layout: post
-title: Animal Guessing Game
-type: hacks
-courses: {'csp': {'week': 20}}
----
-
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
+<!-- Game styling -->
+<style> 
     body {
         font-family: Arial, sans-serif;
         text-align: center;
@@ -49,9 +40,9 @@ courses: {'csp': {'week': 20}}
 </style>
 </head>
 <body>
-
+<!-- This is where the game elements are established -->
 <div id="game-container">
-
+      <!-- Intro to the game -->
     <p>Guess the animal! Here are three facts... good luck!:</p>
 
     <div id="animal-facts">
@@ -59,23 +50,25 @@ courses: {'csp': {'week': 20}}
         <span id="fact2"></span><br>
         <span id="fact3"></span><br>
     </div>
-
+     <!-- This part displays the result of the guess -->
     <p class="result" id="result"></p>
 
+    <!-- This part is where the user can click the button to guess or to play again -->
     <input type="text" id="guess-input" placeholder="Enter your guess">
     <button onclick="checkGuess()">Guess</button>
     <button onclick="resetGame()">Play Again</button>
 
-    <!-- Animal images -->
-    <img src="https://AidanDelgado2.github.io/student2/images/giraffe.png" alt="Giraffe" class="animal-image" id="giraffe-image">
-    <img src="https://AidanDelgado2.github.io/student2/images/hippo.jpg" alt="Hippo" class="animal-image" id="hippo-image">
-    <img src="https://AidanDelgado2.github.io/student2/images/gorilla.jpg" alt="Gorilla" class="animal-image" id="gorilla-image">
-    <img src="https://AidanDelgado2.github.io/student2/images/lion.jpg" alt="Lion" class="animal-image" id="lion-image">
-    <img src="https://AidanDelgado2.github.io/student2/images/cheetah.jpg" alt="Cheetah" class="animal-image" id="cheetah-image">
-    <img src="https://AidanDelgado2.github.io/student2/images/elephant.jpg" alt="Elephant" class="animal-image" id="elephant-image">
+    <!-- Images of each animal that show when the user is correct -->
+    <img src="/student2/images/giraffe.png" alt="Giraffe" class="animal-image" id="giraffe-image">
+    <img src="/student2/images/hippo.jpg" alt="Hippo" class="animal-image" id="hippo-image">
+    <img src="/student2/images/gorilla.jpg" alt="Gorilla" class="animal-image" id="gorilla-image">
+    <img src="/student2/images/lion.jpg" alt="Lion" class="animal-image" id="lion-image">
+    <img src="/student2/images/cheetah.jpg" alt="Cheetah" class="animal-image" id="cheetah-image">
+    <img src="/student2/images/elephant.jpg" alt="Elephant" class="animal-image" id="elephant-image">
 </div>
 
 <script>
+    //List of animals with facts for each one to be listed, along with their corresponding image ids
     const animals = [
         { name: "giraffe", facts: ["Tallest land animal", "Has a long neck", "Spots on body"], imageId: "giraffe-image" },
         { name: "hippo", facts: ["Large herbivorous mammal", "Semi-aquatic", "Has large jaws"], imageId: "hippo-image" },
@@ -86,7 +79,7 @@ courses: {'csp': {'week': 20}}
     ];
 
     let selectedAnimal;
-
+    //This function starts the game by listing the animal's facts
     function startGame() {
         const randomAnimalIndex = Math.floor(Math.random() * animals.length);
         selectedAnimal = animals[randomAnimalIndex];
@@ -99,33 +92,39 @@ courses: {'csp': {'week': 20}}
             image.style.display = 'none';
         });
     }
-
+    
+    //This calls the startgame procedure
     startGame();
+
+    //This function checks the user's guess
  function checkGuess() {
     const guessInput = document.getElementById('guess-input').value.trim().toLowerCase();
     let correctGuess = false;
     
+    //This iterates through each animal to compare the guess with the animal's name (this code segment was partially generated using {chatgpt})
     animals.forEach(animal => {
         if (guessInput === animal.name) {
+            //If their guess is correct then the program displays a congratulations message
             if (selectedAnimal.name === guessInput) {
                 document.getElementById('result').textContent = "Congratulations you got it right!";
                 document.getElementById('result').className = "result correct";
                 document.getElementById(animal.imageId).style.display = 'block';
                 correctGuess = true;
+            //If their guess is not correct, it shows a nice try message
             } else {
                 document.getElementById('result').textContent = "You guessed the animal, but it's not the one we're thinking of!";
                 document.getElementById('result').className = "result incorrect";
             }
         }
     });
-
+    //This is for when the user guesses an animal that is not in the defined animal list
     if (!correctGuess) {
         document.getElementById('result').textContent = "Nice try, but that's not the correct animal.";
         document.getElementById('result').className = "result incorrect";
     }
 }
 
-
+    //This function restarts the game
     function resetGame() {
         document.getElementById('guess-input').value = ""; 
         startGame(); 
