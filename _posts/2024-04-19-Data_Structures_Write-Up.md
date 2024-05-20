@@ -17,7 +17,7 @@ This code models the user database that is previously pictured, and also include
 <img src="https://AidanDelgado2.github.io/student2/images/collections_ss_2.png" height="300" width="1500">
 
 ## Lists and Dictionaries
-# A list as extracted from database as Python objects.
+### A list as extracted from database as Python objects.
 These are a list and dictionaries that show the users when they are extracted from the database using the debugger.
 <img src="https://AidanDelgado2.github.io/student2/images/collections_ss_11.png" height="400" width="1500">
 
