@@ -8,7 +8,7 @@ courses: {'csp': {'week': 20}}
 ---
 
 ## Collections
-# Unique collection/table in database display rows and columns in the table of the SQLite database. 
+### Unique collection/table in database display rows and columns in the table of the SQLite database. 
 I used the database from our lebron project. It includes usernames, passwords, and date of births.
 <img src="https://AidanDelgado2.github.io/student2/images/collections_ss_1.png" height="400" width="1500">
 
